@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="com.example.mohamed.project3.MainActivity">
+
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="The smallest 4-digit number formed by using the digits 0, 3, 5, 6 is _____." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="A.0356" />
+
+                <RadioButton
+                    android:id="@+id/B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="B.6530" />
+
+                <RadioButton
+                    android:id="@+id/C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="C.6035" />
+
+                <RadioButton
+                    android:id="@+id/D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="D.3056" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="what is operations in math ?" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add" />
+
+            <CheckBox
+                android:id="@+id/mult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="multiple" />
+
+            <CheckBox
+                android:id="@+id/tennis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="kick" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Harmony had 357 cats and Lindsey had 150 dogs so how many animals are there altogether?" />
+
+        <EditText
+            android:id="@+id/enteryTXT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text=" 3 hrs 40 mins equals ____. Minutes" />
+
+        <EditText
+            android:id="@+id/enteryTXT2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="score" />
+
+        <TextView
+            android:id="@+id/scoreTXT"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+</ScrollView>
